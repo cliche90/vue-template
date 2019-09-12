@@ -1,7 +1,9 @@
 import Vue from 'vue';
-import App from './App.vue';
+import Router from './Router.vue';
+
+import router from './router';
 
 new Vue({
-    el: '#app',
-    render: h => h(App),
-});
+    render: h => h(Router),
+    router,
+}).$mount('#app');
